@@ -1,0 +1,10 @@
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+}

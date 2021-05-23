@@ -1,0 +1,66 @@
+.sidebar {
+  width: 70%;
+  left: -100%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  z-index: 1;
+  background-color: black;
+  transition: 0.5s ease;
+}
+.sidebar-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.list-group {
+  background-color: inherit !important;
+  display: flex;
+  flex-direction: column;
+  color: #f50057 !important;
+  overflow: auto;
+  list-style: none;
+}
+.selecteditem {
+  font-weight: 1.5rem;
+  background-color: #fca5a5 !important;
+}
+
+.listitem {
+  padding: 1rem !important;
+  text-decoration: none;
+  transition: 0.1s;
+}
+.listitem:hover {
+  background-color: #fca5a5;
+}
+@media (min-width: 728px) {
+  .sidebar {
+    display: block;
+    width: 20%;
+    left: 0;
+  }
+  .sidebar-close {
+    display: none;
+  }
+  .list-group {
+    background-color: inherit !important;
+    display: flex;
+    flex-direction: column;
+    color: #f50057 !important;
+    overflow: auto;
+    list-style: none;
+  }
+  .selecteditem {
+    font-weight: 1.5rem;
+  }
+  .listitem {
+    padding: 1rem;
+    text-decoration: none;
+    transition: 0.1s;
+  }
+  .listitem:hover .selecteditem {
+    background-color: blue;
+  }
+}

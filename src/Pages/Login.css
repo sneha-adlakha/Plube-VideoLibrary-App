@@ -1,0 +1,103 @@
+.flex-h-center {
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+}
+
+.form-row > .form-field,
+.form-row > .form-check {
+  margin-bottom: 1.5rem;
+}
+
+.form-field {
+  flex: 1 1 auto;
+}
+
+.form-field > label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.form-field > input,
+.form-field > textarea,
+.form-field > select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #f50057;
+  outline: none;
+}
+
+.form-field > input:focus,
+.form-field > textarea:focus,
+.form-field > select:focus {
+  width: 100%;
+  padding: 0.5rem;
+  box-shadow: 0px 0px 2px 2px #f50057;
+  transition: box-shadow 0.2s linear;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: #404040;
+}
+
+.error-msg {
+  display: none;
+  color: var(--red-600);
+}
+
+.success-msg {
+  display: none;
+  color: #059669;
+}
+
+.was-validated :valid ~ .success-msg {
+  display: block;
+}
+
+.was-validated .form-field > input:valid,
+.was-validated .form-field > textarea:valid,
+.was-validated .form-field > select:valid {
+  border: 1px solid #059669;
+}
+
+.was-validated .form-field > input:valid:focus,
+.was-validated .form-field > textarea:valid:focus,
+.was-validated .form-field > select:valid:focus {
+  box-shadow: 0px 0px 2px 2px #059669;
+  transition: box-shadow 0.2s linear;
+}
+
+.was-validated :invalid ~ .error-msg {
+  display: block;
+}
+
+.was-validated .form-field > input:invalid,
+.was-validated .form-field > textarea:invalid,
+.was-validated .form-field > select:invalid {
+  border: 1px solid #dc2626;
+}
+
+.was-validated .form-field > input:invalid:focus,
+.was-validated .form-field > textarea:invalid:focus,
+.was-validated .form-field > select:invalid:focus {
+  box-shadow: 0px 0px 2px 2px #dc2626;
+  transition: box-shadow 0.2s linear;
+}
+.inline {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}

@@ -1,0 +1,32 @@
+.toast-container {
+  font-size: 0.8em;
+}
+
+.toast-container {
+  position: fixed;
+  background-color: black;
+  padding: 0.7rem;
+  bottom: 0.7rem;
+  right: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  width: 250px;
+  height: 40px;
+  color: white;
+}
+
+.toast-message {
+  padding: 0.2rem 1rem;
+}
+.toast-close-before {
+  font-size: 1rem;
+  color: #f50057;
+  background: transparent;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  top: 0em;
+  right: 0rem;
+}

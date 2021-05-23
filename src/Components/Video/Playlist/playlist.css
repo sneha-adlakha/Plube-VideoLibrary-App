@@ -1,0 +1,31 @@
+.playlist-container {
+  margin: 2rem 1rem;
+  border-radius: 0.5rem;
+  padding-bottom: 0.1rem;
+}
+.playlist-detail {
+  display: flex;
+  justify-content: left;
+  padding: 1rem 0.2rem;
+}
+.playlist-name {
+  border: none;
+  font-weight: bold;
+  background-color: black;
+  color: transparent;
+  text-shadow: 0 0 0 #fca5a5;
+}
+.playlist-updated {
+  color: #f50057;
+  border: 2px solid solid grey;
+  padding: 0.3rem;
+  margin: 0.2rem;
+}
+.flex-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-gap-md {
+  gap: 0.5rem;
+}
