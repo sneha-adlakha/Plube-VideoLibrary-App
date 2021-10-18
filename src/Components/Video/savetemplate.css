@@ -1,0 +1,24 @@
+.list-ul {
+  list-style: none;
+  color: #f50057 !important;
+}
+.playlistbtn {
+  color: white;
+  background: #f50057 !important;
+  padding: 0.2rem;
+  border: none;
+  margin: 0.2rem;
+  margin-left: 0;
+}
+.playlist-txtbox {
+  color: #f50057 !important;
+  width: 7rem;
+}
+
+.hidden {
+  display: none;
+}
+.txt-heading {
+  background-color: #f50057;
+  color: white;
+}

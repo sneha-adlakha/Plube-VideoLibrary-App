@@ -1,0 +1,75 @@
+.video-card {
+  cursor: pointer;
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+.cardbody {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  grid-gap: 0.5rem;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+.avatarcontainer {
+  background: transparent;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.avatarimg {
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+}
+.video-detail {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.title {
+  font-size: 1rem !important;
+  color: #f50057;
+}
+.author {
+  font-size: 0.8rem !important;
+  color: #f50057;
+}
+.no-line {
+  text-decoration: none;
+}
+.flex-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-gap-md {
+  gap: 0.5rem;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.hidden {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .video-card {
+    cursor: pointer;
+    width: 33%;
+    padding: 1rem;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+}
